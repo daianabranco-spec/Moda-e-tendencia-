@@ -1,0 +1,48 @@
+header>
+       <h1>moda e Tendência</h1>
+   </header>
+
+
+   <main>
+       <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=200&auto=format&fit=crop&quot; alt="Look moderno de moda urbana com peças atemporais e elegantes">
+      
+       <div class="conteudo-post">
+           <h2>No moda & Tendência, transformamos a inspiração do dia a dia em combinações autênticas e cheias de personalidade.</h2>
+           <p class="artigo-autor">por: Steffany Camily</p>
+           <p>Seja bem-vindo ao Estilo & Tendência! Conectamos você ao universo da alta costura e do street style com dicas práticas, tendências da estação e combinações versáteis para o seu guarda-roupa.</p>
+          
+           <div>
+               <button id="btn-coracao">❤️ <span>0</span></button>
+               <button id="btn-like">👍 <span>0</span></button>
+           </div>
+       </div>
+
+
+       <article>
+           <h3>Tendências de Outono/Inverno</h3>
+           <p>Descubra como combinar tons terrosos e peças em alfaiataria para criar looks elegantes e confortáveis nesta temporada.</p>
+       </article>
+
+
+   </main>
+
+
+   <script>
+       // Correção da seleção dos botões e funcionalidade de clique para contar interações
+       const btnCoracao = document.getElementById("btn-coracao");
+       const btnLike = document.getElementById("btn-like");
+
+
+       btnCoracao.addEventListener("click", () => {
+           const contador = btnCoracao.querySelector("span");
+           contador.textContent = parseInt(contador.textContent) + 1;
+       });
+
+
+       btnLike.addEventListener("click", () => {
+           const contador = btnLike.querySelector("span");
+           contador.textContent = parseInt(contador.textContent) + 1;
+       });
+   </script>
+</body>
+</html>
